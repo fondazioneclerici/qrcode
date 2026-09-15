@@ -1,12 +1,37 @@
----
-# CAMPI DA COMPLETARE (li riempie lo studente)
+PROMPT — Quiz di orientamento per Open Day (Fondazione Luigi Clerici, sede di Bergamo)
 
-## 1. LOGO
+Ruolo
+Sei uno sviluppatore front-end. Costruisci un quiz di orientamento web, single-page, pronto per il deploy su GitHub Pages.
+
+Contesto
+- Committente: Fondazione Luigi Clerici, sede di Bergamo.
+- Utenti: ragazzi di scuola media (13-14 anni). Accedono tramite QR Code → traffico quasi solo da smartphone.
+- Obiettivo: 5 domande che, tramite un sistema a punteggio, indirizzino ogni ragazzo verso l'indirizzo di studio più adatto.
+
+Stack tecnico (VINCOLANTE)
+- HTML5, CSS3, JavaScript vanilla (ES6), Bootstrap 5 via CDN.
+- Nessun framework JS, nessun build step, nessun backend. Tutto client-side.
+- Deploy su GitHub Pages: usa SOLO percorsi relativi; deve funzionare da sottocartella `https://utente.github.io/nome-repo/`.
+- File: `index.html` (+ facoltativi `style.css` e `script.js`, a percorsi relativi).
+
+OTTIMIZZAZIONE MOBILE (PRIORITÀ ASSOLUTA)
+- Progetto mobile-first: la resa su smartphone in verticale viene PRIMA di tutto il resto.
+- `<meta name="viewport" content="width=device-width, initial-scale=1">` obbligatorio.
+- Layout a colonna singola, card centrata, nessuno scroll orizzontale.
+- Bottoni grandi e tap-friendly (altezza minima 48px, area di tocco ampia, ben distanziati).
+- Testo leggibile senza zoom (corpo ≥16px), alto contrasto.
+- Usa la griglia responsive di Bootstrap; testa a 360px di larghezza.
+- Nessun elemento fisso che copra i contenuti su schermi piccoli.
+
+---
+CAMPI DA COMPLETARE (li riempie lo studente)
+
+1. LOGO
 - Inserisci il logo in alto, centrato, sopra il titolo, visibile in ogni schermata (o almeno in home e risultato).
 - Posizione file logo: `[percorso/URL del logo — es. ./assets/logo.png]`
 - Testo alternativo logo: `[alt text]`
 
-## 2. INDIRIZZI DI STUDIO (da mappare nel punteggio)
+2. INDIRIZZI DI STUDIO (da mappare nel punteggio)
 1. `[Indirizzo A]`
 2. `[Indirizzo B]`
 3. `[Indirizzo C]`
@@ -25,13 +50,13 @@ Domanda 1: `[testo]`
 
 Suggerimento sui temi da coprire: tempo libero, materie preferite, modo di lavorare (manualità/teoria/relazione/creatività), ambiente ideale, aspirazione futura.
 
-## 4. ESTETICA
+4. ESTETICA
 - Palette / colori brand: `[HEX principali]`
 - Font: `[eventuale font]`
 - Tono visivo: `[es. giovane e accogliente, non infantile]`
 - Elementi extra: `[es. transizioni, icone, immagini di sfondo]`
 
-## 5. FUNZIONALITÀ
+5. FUNZIONALITÀ
 - Home: titolo `[...]`, introduzione `[1-2 righe]`, pulsante "Inizia".
 - Navigazione: `[avanzamento automatico alla selezione / pulsante "Avanti" / "Indietro" sì o no]`
 - Progress bar con "Domanda X di 5": `[sì/no]`
@@ -40,14 +65,14 @@ Suggerimento sui temi da coprire: tempo libero, materie preferite, modo di lavor
 - Dati personali raccolti: `[no → nessun consenso privacy]`
 
 ---
-## Logica del quiz (fissa)
+Logica del quiz (fissa)
 - 5 domande a scelta singola, una schermata per domanda.
 - Ogni risposta assegna punti a uno o più indirizzi (matrice risposta → punteggi).
 - Al termine vince l'indirizzo col punteggio più alto.
 
-## Manutenibilità
+Manutenibilità
 - Codice commentato in italiano.
 - In cima al JS, un unico oggetto di configurazione con domande, risposte, punteggi e indirizzi, facilmente editabile.
 
-## Deliverable
+Deliverable
 - File pronti al commit (`index.html` + eventuali `style.css`/`script.js`), funzionanti sia in locale sia su GitHub Pages.
