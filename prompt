@@ -1,0 +1,53 @@
+---
+# CAMPI DA COMPLETARE (li riempie lo studente)
+
+## 1. LOGO
+- Inserisci il logo in alto, centrato, sopra il titolo, visibile in ogni schermata (o almeno in home e risultato).
+- Posizione file logo: `[percorso/URL del logo — es. ./assets/logo.png]`
+- Testo alternativo logo: `[alt text]`
+
+## 2. INDIRIZZI DI STUDIO (da mappare nel punteggio)
+1. `[Indirizzo A]`
+2. `[Indirizzo B]`
+3. `[Indirizzo C]`
+4. `[Indirizzo D]`
+(aggiungi/rimuovi secondo l'offerta reale)
+
+## 3. DOMANDE (5, a scelta singola)
+Per ognuna, compila testo domanda + risposte + punti assegnati a ciascun indirizzo.
+
+Domanda 1: `[testo]`
+- Risposta A: `[testo]` → punti: `[Indirizzo: n, ...]`
+- Risposta B: `[testo]` → punti: `[...]`
+- Risposta C: `[testo]` → punti: `[...]`
+
+(ripeti per le domande 2, 3, 4, 5)
+
+Suggerimento sui temi da coprire: tempo libero, materie preferite, modo di lavorare (manualità/teoria/relazione/creatività), ambiente ideale, aspirazione futura.
+
+## 4. ESTETICA
+- Palette / colori brand: `[HEX principali]`
+- Font: `[eventuale font]`
+- Tono visivo: `[es. giovane e accogliente, non infantile]`
+- Elementi extra: `[es. transizioni, icone, immagini di sfondo]`
+
+## 5. FUNZIONALITÀ
+- Home: titolo `[...]`, introduzione `[1-2 righe]`, pulsante "Inizia".
+- Navigazione: `[avanzamento automatico alla selezione / pulsante "Avanti" / "Indietro" sì o no]`
+- Progress bar con "Domanda X di 5": `[sì/no]`
+- Schermata risultato: nome indirizzo + descrizione `[2-3 righe]` + motivazione + CTA link `[URL]` + "Rifai il quiz".
+- Gestione parità di punteggio: `[mostra entrambi / criterio di spareggio]`
+- Dati personali raccolti: `[no → nessun consenso privacy]`
+
+---
+## Logica del quiz (fissa)
+- 5 domande a scelta singola, una schermata per domanda.
+- Ogni risposta assegna punti a uno o più indirizzi (matrice risposta → punteggi).
+- Al termine vince l'indirizzo col punteggio più alto.
+
+## Manutenibilità
+- Codice commentato in italiano.
+- In cima al JS, un unico oggetto di configurazione con domande, risposte, punteggi e indirizzi, facilmente editabile.
+
+## Deliverable
+- File pronti al commit (`index.html` + eventuali `style.css`/`script.js`), funzionanti sia in locale sia su GitHub Pages.
